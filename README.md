@@ -9,7 +9,7 @@ Testing Sequence->Test Sequence 2:Is Sequence Working?
 ```mermaid
 sequenceDiagram
 
-RemoteAcqThread->RemoteInstrument: doPreSequenceTasks() <br/>calls acquire();
+RemoteAcqThread->RemoteInstrument: doPreSequenceTasks() <p><p/>calls acquire();
 RemoteInstrument->asyncThread: startSingleAcq(\nshared_ptr(s))
 Note over asyncThread: set AcqState = 1
 Note over asyncThread: Starts normal sequence
